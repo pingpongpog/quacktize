@@ -3,9 +3,20 @@ import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import terser from '@rollup/plugin-terser';
 import typescript from 'rollup-plugin-typescript2';
-import pkg from './package.json';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-const input = 'src/website-optimizer.js';
+// Simulate __dirname in ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Read and parse package.json
+const pkg = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'package.json'), 'utf-8'));
+
+// ...rest of your Rollup config using `pkg`
+
+const input = 'src/quacktize.js';
 const extensions = ['.js', '.ts'];
 
 export default [
@@ -16,7 +27,7 @@ export default [
       {
         file: pkg.browser,
         format: 'umd',
-        name: 'WebsiteOptimizer',
+        name: 'Quacktize',
         sourcemap: true
       }
     ],
