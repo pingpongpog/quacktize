@@ -1,57 +1,57 @@
 {
-    "name": "website-optimizer",
+    "name": "quacktize",
     "version": "1.0.0",
     "description": "A comprehensive library for optimizing website performance with easy API",
-    "main": "dist/website-optimizer.js",
-    "module": "dist/website-optimizer.esm.js",
-    "browser": "dist/website-optimizer.min.js",
-    "types": "dist/types/website-optimizer.d.ts",
+    "main": "dist/quacktize.js",
+    "module": "dist/quacktize.esm.js",
+    "browser": "dist/quacktize.min.js",
+    "types": "dist/types/quacktize.d.ts",
     "scripts": {
-      "clean": "rimraf dist",
-      "build": "npm run clean && rollup -c",
-      "dev": "rollup -c -w",
-      "test": "jest",
-      "lint": "eslint src",
-      "prepublishOnly": "npm run build"
+        "clean": "rimraf dist",
+        "build": "npm run clean && rollup -c",
+        "dev": "rollup -c -w",
+        "test": "jest",
+        "lint": "eslint src",
+        "prepublishOnly": "npm run build"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/pingpongpog/quacktize.git"
+        "type": "git",
+        "url": "git+https://github.com/pingpongpog/quacktize.git"
     },
     "keywords": [
-      "performance",
-      "optimization",
-      "lazy-loading",
-      "prefetching",
-      "smooth-scrolling",
-      "web-performance",
-      "critical-css",
-      "resource-hints"
+        "performance",
+        "optimization",
+        "lazy-loading",
+        "prefetching",
+        "smooth-scrolling",
+        "web-performance",
+        "critical-css",
+        "resource-hints"
     ],
-    "author": "Your Name <your.email@example.com>",
+    "author": "pingpongpog",
     "license": "MIT",
     "bugs": {
-      "url": "https://github.com/pingpongpog/quacktize/issues"
+        "url": "https://github.com/pingpongpog/quacktize/issues"
     },
     "homepage": "https://github.com/pingpongpog/quacktize#readme",
     "devDependencies": {
-      "@babel/core": "^7.23.0",
-      "@babel/preset-env": "^7.23.0",
-      "@rollup/plugin-babel": "^6.0.4",
-      "@rollup/plugin-commonjs": "^25.0.5",
-      "@rollup/plugin-node-resolve": "^15.2.3",
-      "@rollup/plugin-terser": "^0.4.4",
-      "eslint": "^8.51.0",
-      "jest": "^29.7.0",
-      "jest-environment-jsdom": "^29.7.0",
-      "rimraf": "^5.0.5",
-      "rollup": "^4.1.0",
-      "rollup-plugin-typescript2": "^0.36.0",
-      "typescript": "^5.2.2"
+        "@babel/core": "^7.23.0",
+        "@babel/preset-env": "^7.23.0",
+        "@rollup/plugin-babel": "^6.0.4",
+        "@rollup/plugin-commonjs": "^25.0.5",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-terser": "^0.4.4",
+        "eslint": "^8.51.0",
+        "jest": "^29.7.0",
+        "jest-environment-jsdom": "^29.7.0",
+        "rimraf": "^5.0.5",
+        "rollup": "^4.1.0",
+        "rollup-plugin-typescript2": "^0.36.0",
+        "typescript": "^5.2.2"
     },
     "files": [
-      "dist",
-      "README.md",
-      "LICENSE"
+        "dist",
+        "README.md",
+        "LICENSE"
     ]
-  }
+}
