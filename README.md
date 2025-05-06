@@ -256,7 +256,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Credits
 
-Developed by [Your Name/Organization]
+Developed by pingpongpog
 
 ---
 
